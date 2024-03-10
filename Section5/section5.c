@@ -2,10 +2,10 @@
 
 int sum(int a){
     //find sum a number;
-    static int x;
-    x=a;
+    static int x =0;
+    x+=a;
 
-    return x+a;
+    return x;
 }
 
 int main(){

@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int i;
+void display();
 
 int main(){
 
