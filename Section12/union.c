@@ -37,5 +37,10 @@ int main(){
     union car car1, car2, *car3;
     printf("Memory size of car1 = %zu\n", sizeof(car1));
 
+    x.c = 'L';
+    printf("c = %c\n",x.c);
+
+    union mixed y = {'K'}; // only the first element
+    
     return 0;
 }
