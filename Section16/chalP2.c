@@ -9,6 +9,7 @@ void changeP(int **ptr){
 
 void allocateMemory(int **ptr){
     *ptr = (int *)malloc(sizeof(int));
+    printf("ptr address function - %p\n", (void*)*ptr);
 }
 
 int main(){
@@ -24,6 +25,7 @@ int main(){
     int ptrInt = 7;
     ptr = &ptrInt;
     printf("*ptr = %d\n", *ptr);
+    printf("ptr address main - %p\n", (void*)&ptr);
     free(ptr);
 
     return 0;
