@@ -34,7 +34,7 @@ void showArray (const double ar[], int i){
     printf("]\n");
 }
 int compare(const void *ptr1, const void *ptr2){
-    const int first = *(const int*)ptr1;
-    const int second = *(const int*)ptr2;
+    const double *first = (const double*)ptr1;
+    const double *second = (const double*)ptr2;
     return first - second;
 }
