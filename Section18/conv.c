@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 int main(){
 
@@ -34,5 +35,8 @@ int main(){
 
     printf("val1=%f and val2=%f\n", val1, val2);
 
+    srand(time(0)); //seed to generate random number
+    printf("%d\n", rand());
+    printf("%d\n", rand()%5+1);//will generate random numbers in range 1-5
     return 0;
 }
