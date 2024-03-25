@@ -17,6 +17,7 @@ struct argT{
 void *ptrint_argT(void *ptr){
     struct argT *redSofa;
     redSofa = (struct argT *)ptr;
+    redSofa->id = pthread_self();
     printf("id=%d, sum=%d, message=%s\n",redSofa->id, redSofa->sum, redSofa->message);
 }
 
